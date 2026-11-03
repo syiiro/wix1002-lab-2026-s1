@@ -15,13 +15,15 @@ public class L4Q1 {
         System.out.println("Enter an integer");
         int number = sc.nextInt();
         
-        if(number >= 0){
-            for(int x = 2; x <= number; x++){
+        if(number > 0){
+            for(int x = 1; x <= number; x++){
                 if(number % x == 0){ 
                 System.out.println(x);
                 }
             }
         }
-            System.out.println("Please enter a positive integer");
+        else{
+            System.out.println("Please enter a non-zero positive integer");
+        }
     }
 }
