@@ -21,15 +21,15 @@ public class L4Q8 {
         int checker = 2;
         
         while (totalPrime < number) {
-            boolean isPrime = true;
+            boolean prime = true;
             
             for (int i = 2; i < checker; i++) {
                 if (checker % i == 0) {
-                    isPrime = false;
+                    prime = false;
                 }
             }
             
-            if (isPrime) {
+            if (prime) {
                 System.out.print(checker + " ");
                 totalPrime++;
             }
